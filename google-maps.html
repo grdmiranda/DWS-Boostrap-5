@@ -350,61 +350,20 @@
             <!--Sidebar left-->
 
             <!--Content right-->
-            <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-                <h5 class="mb-0" ><strong>Google Maps</strong></h5>
-                <span class="text-secondary">Maps <i class="fa fa-angle-right"></i> Google maps</span>
-                
-                <div class="row mt-3">
-                    <div class="col-sm-6">
-                        <!--Google world-->
-                        <div class="mt-1 mb-3 p-3 button-container bg-white shadow-sm border">
-                            <h6 class="mb-2">Google world map</h6>
-                            <p class="mb-3">Default sample of google world map</p>
-                            
-                            <div id="google_world_map" style="width: 100%; height: 300px"></div>
-                        </div>
-                        <!--/Line Chart-->
-
-                    </div>
+            const MapaView = {
+                template: `
+                  <div>
+                    <h1>Mapa de riesgos e incidentes</h1>
                     
-                    
-                    <div class="col-sm-6">
-                        <!--Area Chart-->
-                        <div class="mt-1 mb-3 p-3 button-container  bg-white shadow-sm border">
-                            <h6>Google Europe Map</h6>
-                            <p class="mb-3">Europe map sample</p>
-                            
-                            <div id="google_eu_map" style="width: 100%; height: 300px;"></div>
-                        </div>
-                        <!--/Area Table-->
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-sm-6">
-                        <!--Google world-->
-                        <div class="mt-1 mb-3 p-3 button-container bg-white shadow-sm border">
-                            <h6 class="mb-2">Google map with marker</h6>
-                            <p class="mb-3">Place markers on map locations</p>
-                            
-                            <div id="google_ptm_map" style="width: 100%; height: 300px"></div>
-                        </div>
-                        <!--/Line Chart-->
-
-                    </div>
-                    
-                    
-                    <div class="col-sm-6">
-                        <!--Area Chart-->
-                        <div class="mt-1 mb-3 p-3 button-container  bg-white shadow-sm border">
-                                <h6 class="mb-2">Google map with marker</h6>
-                                <p class="mb-3">Place markers on map locations</p>
-                            
-                            <div id="google_search_map" style="width: 100%; height: 300px;"></div>
-                        </div>
-                        <!--/Area Table-->
-                    </div>
-                </div>
+            <center><iframe src="?embedded=true"</iframe></center>
+            
+                       <center><iframe src="https://www.google.com/maps/d/embed?mid=1ZD6n80rxwCoRKlTpSqMv7uiwLmBA3pjN&ehbc=2E312F/exec?embedded=true" width="1400" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center>      
+            
+            <center><iframe src="?embedded=true"</iframe></center>
+            
+                  </div>
+                `
+              }
 
                 <!--Footer-->
                 <div class="row mt-5 mb-4 footer">
